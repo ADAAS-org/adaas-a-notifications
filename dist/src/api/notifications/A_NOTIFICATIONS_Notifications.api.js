@@ -19,9 +19,7 @@ class A_NOTIFICATIONSCommonAPIClass extends a_auth_1.A_AUTH_APIProvider {
     }
     sendEmail(request) {
         return __awaiter(this, void 0, void 0, function* () {
-            const response = yield this.axiosInstance.post('/api/v1/email/send', {
-                request
-            });
+            const response = yield this.axiosInstance.post('/api/v1/emails/send', request);
             return response.data;
         });
     }

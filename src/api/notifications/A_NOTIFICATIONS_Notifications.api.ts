@@ -14,9 +14,7 @@ export class A_NOTIFICATIONSCommonAPIClass extends A_AUTH_APIProvider {
     async sendEmail(
         request: A_NOTIFICATIONS_TYPES__EmailNotification_APIEntity,
     ): Promise<void> {
-        const response = await this.axiosInstance.post('/api/v1/email/send', {
-            request
-        });
+        const response = await this.axiosInstance.post('/api/v1/emails/send', request);
 
         return response.data;
     }
