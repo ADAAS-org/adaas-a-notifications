@@ -13,6 +13,15 @@ export type A_NOTIFICATIONS_TYPES__EmailNotification_SendingConfig = {
      * Custom email subject
      */
     subject: string;
+    /**
+     * Custom email sender. MUST be verified in SES through ADAAS A-Notifications Application
+     */
+    sender: string;
+    /**
+     * Custom email template (A-Folder file identity). If not provided, default template will be used in accordance to the email type
+     * To add new email template just upload it to A-Folder via A-Folder UI or via A-Notifications UI.
+     */
+    emailTemplate: string;
 };
 export declare enum A_NOTIFICATIONS_TYPES__EMAIL_TYPES {
     OTP = "OTP",
