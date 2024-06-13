@@ -1,6 +1,6 @@
 {
   "name": "@adaas/a-notifications",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "SDK to control notifications for ADAAS",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
