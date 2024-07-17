@@ -4,9 +4,9 @@ export { A_NOTIFICATIONS_Context } from './src/global/A_NOTIFICATIONS_Context.cl
 // ============ Export Global & Service Entities ============
 
 // ================== API ==================
-// export * as A_ARC_AppInteractions from './src/api/app-interactions';
-export * as A_ARC_ServerCommands from './src/api/server-commands';
-// export * as A_ARC_ServerDelegate from './src/api/server-delegate';
+// export * as A_NOTIFICATIONS_AppInteractions from './src/api/app-interactions';
+export * as A_NOTIFICATIONS_ServerCommands from './src/api/server-commands';
+// export * as A_NOTIFICATIONS_ServerDelegate from './src/api/server-delegate';
 
 
 

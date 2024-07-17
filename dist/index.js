@@ -26,14 +26,14 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
     for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.A_ARC_ServerCommands = exports.A_NOTIFICATIONS_Context = void 0;
+exports.A_NOTIFICATIONS_ServerCommands = exports.A_NOTIFICATIONS_Context = void 0;
 var A_NOTIFICATIONS_Context_class_1 = require("./src/global/A_NOTIFICATIONS_Context.class");
 Object.defineProperty(exports, "A_NOTIFICATIONS_Context", { enumerable: true, get: function () { return A_NOTIFICATIONS_Context_class_1.A_NOTIFICATIONS_Context; } });
 // ============ Export Global & Service Entities ============
 // ================== API ==================
-// export * as A_ARC_AppInteractions from './src/api/app-interactions';
-exports.A_ARC_ServerCommands = __importStar(require("./src/api/server-commands"));
-// export * as A_ARC_ServerDelegate from './src/api/server-delegate';
+// export * as A_NOTIFICATIONS_AppInteractions from './src/api/app-interactions';
+exports.A_NOTIFICATIONS_ServerCommands = __importStar(require("./src/api/server-commands"));
+// export * as A_NOTIFICATIONS_ServerDelegate from './src/api/server-delegate';
 // ============ CONSTANTS Export ============
 // export {
 // } from './src/constants/errors.constants';
