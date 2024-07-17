@@ -1,10 +1,3 @@
-export type A_NOTIFICATIONS_TYPES__EmailNotification_APIEntity = {
-    type: A_NOTIFICATIONS_TYPES__EMAIL_TYPES,
-    to: string,
-    payload: any,
-    config?: Partial<A_NOTIFICATIONS_TYPES__EmailNotification_SendingConfig>
-};
-
 export type A_NOTIFICATIONS_TYPES__EmailNotification_SendingConfig = {
     /**
      * ISO string when to send the email
@@ -40,4 +33,30 @@ export enum A_NOTIFICATIONS_TYPES__EMAIL_TYPES {
     PROMO = 'PROMO',
     CORPORATE = 'CORPORATE',
     CUSTOM = 'CUSTOM'
+}
+
+
+
+// =========================  SEND EMAIL REQUEST API TYPES ================================
+export type A_NOTIFICATIONS_SERVER_COMMANDS_TYPES__SendEmailRequest = {
+    /**
+     * Email type
+     */
+    type: A_NOTIFICATIONS_TYPES__EMAIL_TYPES,
+    /**
+     * Email recipient
+     */
+    to: string,
+    /**
+     * Email payload for custom emails. Could be parameters for email templates or custom email body
+     */
+    payload: any,
+    /**
+     * Email sending configuration
+     */
+    config?: Partial<A_NOTIFICATIONS_TYPES__EmailNotification_SendingConfig>
+}
+
+export type A_NOTIFICATIONS_SERVER_COMMANDS_TYPES__SendEmailResponse = {
+    status: 'OK' | 'ERROR',
 }

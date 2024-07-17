@@ -1,0 +1,3 @@
+export declare enum A_NOTIFICATIONS_CONSTANTS__ERROR_CODES {
+}
+export declare const A_NOTIFICATIONS_CONSTANTS__DEFAULT_ERRORS: {};

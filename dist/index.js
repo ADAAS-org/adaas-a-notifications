@@ -1,16 +1,45 @@
 "use strict";
-// ============ TYPES Export ============
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    var desc = Object.getOwnPropertyDescriptor(m, k);
+    if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
+      desc = { enumerable: true, get: function() { return m[k]; } };
+    }
+    Object.defineProperty(o, k2, desc);
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {
+    Object.defineProperty(o, "default", { enumerable: true, value: v });
+}) : function(o, v) {
+    o["default"] = v;
+});
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
+    __setModuleDefault(result, mod);
+    return result;
+};
+var __exportStar = (this && this.__exportStar) || function(m, exports) {
+    for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.A_NOTIFICATIONSCommonAPIClass = exports.A_NOTIFICATIONSCommonAPI = exports.A_NOTIFICATIONS_TYPES__EMAIL_TYPES = void 0;
-// ============ API TYPES Export ============
-var A_NOTIFICATIONS_NotificationsAPI_types_1 = require("./src/api/notifications/types/A_NOTIFICATIONS_NotificationsAPI.types");
-Object.defineProperty(exports, "A_NOTIFICATIONS_TYPES__EMAIL_TYPES", { enumerable: true, get: function () { return A_NOTIFICATIONS_NotificationsAPI_types_1.A_NOTIFICATIONS_TYPES__EMAIL_TYPES; } });
+exports.A_ARC_ServerCommands = exports.A_NOTIFICATIONS_Context = void 0;
+var A_NOTIFICATIONS_Context_class_1 = require("./src/global/A_NOTIFICATIONS_Context.class");
+Object.defineProperty(exports, "A_NOTIFICATIONS_Context", { enumerable: true, get: function () { return A_NOTIFICATIONS_Context_class_1.A_NOTIFICATIONS_Context; } });
+// ============ Export Global & Service Entities ============
 // ================== API ==================
-// Mainly for BE purposes it uses API paths from ENV Variables
-var api_1 = require("./src/api");
-Object.defineProperty(exports, "A_NOTIFICATIONSCommonAPI", { enumerable: true, get: function () { return api_1.A_NOTIFICATIONSCommonAPI; } });
-// ============ API CLASSES Export ============
-// Mainly for FE purposes it uses API directly from class constructor
-var A_NOTIFICATIONS_Notifications_api_1 = require("./src/api/notifications/A_NOTIFICATIONS_Notifications.api");
-Object.defineProperty(exports, "A_NOTIFICATIONSCommonAPIClass", { enumerable: true, get: function () { return A_NOTIFICATIONS_Notifications_api_1.A_NOTIFICATIONSCommonAPIClass; } });
+// export * as A_ARC_AppInteractions from './src/api/app-interactions';
+exports.A_ARC_ServerCommands = __importStar(require("./src/api/server-commands"));
+// export * as A_ARC_ServerDelegate from './src/api/server-delegate';
+// ============ CONSTANTS Export ============
+// export {
+// } from './src/constants/errors.constants';
+// ============ TYPES Export ============
+// ============ API TYPES Export ============
+// export * from './src/api/app-interactions/index.types';
+__exportStar(require("./src/api/server-commands/index.types"), exports);
+// export * from './src/api/server-delegate/index.types';
 //# sourceMappingURL=index.js.map

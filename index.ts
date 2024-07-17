@@ -1,21 +1,27 @@
 
-// ============ TYPES Export ============
+export { A_NOTIFICATIONS_Context } from './src/global/A_NOTIFICATIONS_Context.class';
 
-// ============ API TYPES Export ============
-export {
-    A_NOTIFICATIONS_TYPES__EMAIL_TYPES,
-    A_NOTIFICATIONS_TYPES__EmailNotification_APIEntity,
-    A_NOTIFICATIONS_TYPES__EmailNotification_SendingConfig
-} from './src/api/notifications/types/A_NOTIFICATIONS_NotificationsAPI.types';
-
+// ============ Export Global & Service Entities ============
 
 // ================== API ==================
-// Mainly for BE purposes it uses API paths from ENV Variables
-export {
-    A_NOTIFICATIONSCommonAPI
-} from './src/api';
+// export * as A_ARC_AppInteractions from './src/api/app-interactions';
+export * as A_ARC_ServerCommands from './src/api/server-commands';
+// export * as A_ARC_ServerDelegate from './src/api/server-delegate';
 
 
-// ============ API CLASSES Export ============
-// Mainly for FE purposes it uses API directly from class constructor
-export { A_NOTIFICATIONSCommonAPIClass } from './src/api/notifications/A_NOTIFICATIONS_Notifications.api';
+
+// ============ CONSTANTS Export ============
+// export {
+// } from './src/constants/errors.constants';
+
+
+
+// ============ TYPES Export ============
+
+
+// ============ API TYPES Export ============
+// export * from './src/api/app-interactions/index.types';
+export * from './src/api/server-commands/index.types';
+// export * from './src/api/server-delegate/index.types';
+
+
