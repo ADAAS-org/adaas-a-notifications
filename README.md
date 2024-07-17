@@ -1,10 +1,12 @@
-<img align="left" style="margin-right:40px; margin-bottom:80px;" width="180" height="80" src="./docs/logo.png" alt="ADAAS Logo">
+<img align="left" style="margin-right:40px; margin-bottom:80px;" width="180" height="80" src="./docs/a-logo-docs.png" alt="ADAAS Logo">
 
-# ADAAS A-Notifications SDK 
+# A-ARC SDK 
 
 | LTS | Latest | npm               |
 |---------------|----------|---------------------------|
 | v1.0.0      |   v1.0.1    |     [@adaas/a-notifications](https://npm.com)    |
+
+
 
 
 <!-- TABLE OF CONTENTS -->
